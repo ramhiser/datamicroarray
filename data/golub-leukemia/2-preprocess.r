@@ -13,3 +13,6 @@ data(Golub_Test)
 golub.test <- exprs(Golub_Test)
 golub.testlabels <- Golub_Test@phenoData@data$ALL.AML
 golub.test <- data.frame(labels = golub.testlabels, t(golub.test))
+
+write.table(golub.train, "golub-train.csv", sep = ",", row = FALSE)
+write.table(golub.test, "golub-test.csv", sep = ",", row = FALSE)
