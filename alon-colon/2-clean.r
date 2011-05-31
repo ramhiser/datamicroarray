@@ -1,6 +1,6 @@
 # Colon Cancer Data Set from Alon et al. (1999)
-library(colonCA)
-data(colonCA)
+library('colonCA')
+data('colonCA')
 
 # Bioconductor requires exprs() on the data sets.
 # We rename the columns of the data matrix because some of the microarray codes
@@ -12,3 +12,4 @@ colon.labels <- colonCA@phenoData$class
 colon.df <- data.frame(labels = colon.labels, colon.x)
 
 write.table(colon.df, "colon-cancer.csv", sep = ",", row = FALSE)
+
