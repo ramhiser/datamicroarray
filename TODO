@@ -1,2 +1,12 @@
-Add reference for Khan data set
-Improve documentation of each data set
+For 1000 splits, store the training_obs, test_obs, and the the gene ordering with Dudoit's var_sel.
+	Alon
+	Chiaretti
+	Christensen
+	Golub
+	Gravier
+	Khan
+	Shipp
+	Singh
+Add combined version of Golub data set.
+Improve documentation for Golub data set.
+Add reference for Khan data set.

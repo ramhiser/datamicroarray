@@ -3,5 +3,5 @@
 source('http://bioconductor.org/biocLite.R')
 biocLite()
 
-# Downloading the Alon Colon Cancer Data Set
+# Downloading the Chiaretti Acute Lymphoblastic Leukemia (ALL) Data Set
 biocLite('ALL')
