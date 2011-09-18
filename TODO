@@ -7,6 +7,16 @@ For 1000 splits, store the training_obs, test_obs, and the the gene ordering wit
 	Khan
 	Shipp
 	Singh
-Add combined version of Golub data set.
+Create combined version of 'golub' data set.
+Create a helper function that returns the splits along with the reduced dimension.
+	Takes dataset_name and q.
+Add unit test to make sure that q's are specified correctly for each data set.
+Also, add unit test to make sure helper function doesn't mess up with other names.
+	Example: NULL, "Awesome_data", "Asmodean"
+
 Improve documentation for Golub data set.
 Add reference for Khan data set.
+
+Store data sets with RGoogleStorage (or RAmazonS3) and download them to the end user.
+	How to download them only once?
+	More information here: http://www.omegahat.org/
