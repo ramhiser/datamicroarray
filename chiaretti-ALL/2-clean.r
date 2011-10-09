@@ -1,19 +1,36 @@
 # Acute Lymphoblastic Leukemia (ALL) Data Set from Chiaretti et al. (1999)
+source("http://www.bioconductor.org/biocLite.R")
+biocLite('ALL')
 library('ALL')
 data('ALL')
 
-# Bioconductor requires exprs() on the data sets.
-# We rename the columns of the data matrix because some of the microarray codes
-# exceed 256 characters in length, which causes errors in subsequent code.
-ALL.x <- t(exprs(ALL))
-colnames(ALL.x) <- paste("X", seq_len(ncol(ALL.x)), sep = "")
-ALL.labels <- ALL@phenoData$mol.biol
+x <- t(exprs(ALL))
+y <- as.vector(ALL$mol.biol)
 
-ALL.df <- data.frame(labels = ALL.labels, ALL.x)
+# Some authors only consider the B-cell ALL tumors.
+# An example is given here:
+# http://www.bioconductor.org/help/course-materials/2011/intl-workshop-bioc/presentation-slides/Introduction-Lab.pdf
+# If we wish to do the same, set b_cells to TRUE.
+b_cells <- FALSE
+if(b_cells) {
+  b_cell <- grep("^B", as.character(ALL$BT))
+  x <- x[b_cell,]
+  y <- y[b_cell]
+}
 
-# As in Xu et al. (2009), we only consider the samples with
-# molecular biology classiﬁcation NEG or BCR/ABL.
-ALL.df <- subset(ALL.df, labels == "NEG" | labels == "BCR/ABL")
-ALL.df$labels <- factor(ALL.df$labels)
+# Additionally, some authors, such as Ramey and Young (2012)
+# and Xu, Brock, and Parrish (2009) only consider
+# the samples with biology classification NEG or BCR/ABL. The Xu et al. paper is entitled
+# "Modified linear discriminant analysis approaches for classification of high-dimensional microarray data"
+# published in Computational Statistics and Data Analysis.
+# Set two_classes to TRUE if we want to do the same.
+two_classes <- FALSE
 
-write.csv(ALL.df, bzfile("chiaretti-ALL.csv.bz2"), row.names = FALSE)
+if(two_classes) {
+  classes <- c("NEG", "BCR/ABL")
+  idx <- which(y %in% two_classes)
+  x <- x[idx, ]
+  y <- y[idx]
+}
+
+chiaretti <- list(x = x, y = factor(y))
