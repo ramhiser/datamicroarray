@@ -1,3 +1,14 @@
+Update the following data sets to the new scheme (see Chiaretti, 2004 for example)
+	Alon
+	Christensen
+	Gravier
+	Shipp
+	Singh
+	Cho et al. (1998) - Yeast Cell Cycle
+	Bhattacharjee et al. (2001) - Lung Cancer
+	Wen et al. (1998) - Rat CNS
+	Yeoh et al. (2002) - St. Jude Leukemia
+
 For 1000 splits, store the training_obs, test_obs, and the the gene ordering with Dudoit's var_sel.
 	Alon
 	Chiaretti
@@ -7,6 +18,10 @@ For 1000 splits, store the training_obs, test_obs, and the the gene ordering wit
 	Khan
 	Shipp
 	Singh
+	Cho et al. (1998) - Yeast Cell Cycle
+	Bhattacharjee et al. (2001) - Lung Cancer
+	Wen et al. (1998) - Rat CNS
+	Yeoh et al. (2002) - St. Jude Leukemia
 Create a helper function that returns the splits along with the reduced dimension.
 	Takes dataset_name and q.
 Add unit test to make sure that q's are specified correctly for each data set.
