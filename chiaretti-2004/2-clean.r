@@ -1,6 +1,4 @@
-# Acute Lymphoblastic Leukemia (ALL) Data Set from Chiaretti et al. (1999)
-source("http://www.bioconductor.org/biocLite.R")
-biocLite('ALL')
+# Acute Lymphoblastic Leukemia (ALL) Data Set from Chiaretti et al. (2004)
 library('ALL')
 data('ALL')
 
