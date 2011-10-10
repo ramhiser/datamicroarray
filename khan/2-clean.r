@@ -3,12 +3,13 @@ data('khan')
 
 # We remove the first two columns of the Khan data set because it contains meta data
 # not directy useful to us for classification purposes.
-khan.df <- t(khan[,-(1:2)])
-dimnames(khan.df) <- NULL
-khan.df <- data.frame(khan.df)
+data('khan')
+gene_names <- khan[,1]
+khan <- t(khan[,-(1:2)])
+dimnames(khan) <- NULL
+y <- factor(as.vector(khan[,1]))
+x <- data.matrix(khan[,-1])
+class(x) <- "numeric"
+colnames(x) <- gene_names[-1]
 
-# The first column of the data frame contains the class labels after the transpose above.
-p <- ncol(khan.df) - 1
-colnames(khan.df) <- c("labels", paste("X", seq_len(p), sep = ""))
-
-write.table(khan.df, "khan.csv", sep = ",", row = FALSE)
+khan <- list(x = x, y = y)
