@@ -19,5 +19,5 @@
 # (B) Prediction of clinical outcome: in this data set, 21 patients were evaluable with respect to recurrence following surgery
 # with 8 patients having relapsed and 13 patients having remained relapse free ("non-relapse") for at least 4 years.
 
-download.file(url = "http://datam.i2r.a-star.edu.sg/datasets/krbd/ProstateCancer/ProstateCancer.zip", destfile = "ProstateCancer.zip")
-unzip("ProstateCancer.zip")
+download.file(url = "http://datam.i2r.a-star.edu.sg/datasets/krbd/ProstateCancer/ProstateCancer.zip", destfile = "singh.zip")
+unzip("singh.zip")
