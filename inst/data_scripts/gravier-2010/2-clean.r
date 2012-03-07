@@ -1,6 +1,9 @@
 # I'm using a 'trim' function that removes trailing and leading white space from a string.
 # The code is from:
 # http://stackoverflow.com/questions/2261079/whitespace-in-r
+trim <- function (x) {
+  gsub("^\\s+|\\s+$", "", x)
+}
 
 # Breast Cancer Data Set from Gravier et al. (2010)
 library('plyr')
