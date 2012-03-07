@@ -13,5 +13,5 @@
 # patients (labelled as 'cured')while 26 of them are from patients with fatal or refractory disease (labelled as 'fatal').
 # The expression profile contains 6817 genes.
 
-download.file(url = "http://datam.i2r.a-star.edu.sg/datasets/krbd/DLBCL/DLBCL-Harvard.zip", destfile = "DLBCL.zip")
-unzip("DLBCL.zip")
+download.file(url = "http://datam.i2r.a-star.edu.sg/datasets/krbd/DLBCL/DLBCL-Harvard.zip", destfile = "shipp.zip")
+unzip("shipp.zip")

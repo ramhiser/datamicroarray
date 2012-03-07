@@ -7,9 +7,6 @@ library('golubEsets')
 # By default, we only consider the original two classes (i.e. ALL or AML)
 two_classes <- TRUE
 
-# TODO:
-# Rename file to 2-clean.r
-
 # The training data set.
 data('Golub_Train')
 x <- t(exprs(Golub_Train))

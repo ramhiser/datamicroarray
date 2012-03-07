@@ -1,33 +1,14 @@
-Update the following data sets to the new scheme (see Chiaretti, 2004 for example)
-	Alon
-	Christensen
-	Gravier
-	Shipp
-	Singh
+* Package TODO
+** Update the following data sets to the new scheme (see Chiaretti, 2004 for example)
 	Cho et al. (1998) - Yeast Cell Cycle
 	Bhattacharjee et al. (2001) - Lung Cancer
 	Wen et al. (1998) - Rat CNS
 	Yeoh et al. (2002) - St. Jude Leukemia
+** Add data set descriptions to help.r
+** Add data set descriptions to github Wiki
 
-For 1000 splits, store the training_obs, test_obs, and the the gene ordering with Dudoit's var_sel.
-	Alon
-	Chiaretti
-	Christensen
-	Golub
-	Gravier
-	Khan
-	Shipp
-	Singh
-	Cho et al. (1998) - Yeast Cell Cycle
-	Bhattacharjee et al. (2001) - Lung Cancer
-	Wen et al. (1998) - Rat CNS
-	Yeoh et al. (2002) - St. Jude Leukemia
-Create a helper function that returns the splits along with the reduced dimension.
-	Takes dataset_name and q.
-Add unit test to make sure that q's are specified correctly for each data set.
-Also, add unit test to make sure helper function doesn't mess up with other names.
-	Example: NULL, "Awesome_data", "Asmodean"
 
-Store data sets with RGoogleStorage (or RAmazonS3) and download them to the end user.
+* Maybe/Someday
+** Store data sets with RGoogleStorage (or RAmazonS3) and download them to the end user.
 	How to download them only once?
 	More information here: http://www.omegahat.org/
