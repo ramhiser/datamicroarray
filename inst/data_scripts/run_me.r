@@ -52,6 +52,13 @@ source("2-clean.r")
 source("3-save.r")
 file.rename("khan.RData", "../../../data/khan.RData")
 
+# Pomeroy (2002)
+setwd("../pomeroy-2002")
+source("1-download.r")
+source("2-clean.r")
+source("3-save.r")
+file.rename("pomeroy.RData", "../../../data/pomeroy.RData")
+
 # Shipp (2002)
 setwd("../shipp-2002")
 source("1-download.r")
