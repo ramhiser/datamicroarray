@@ -17,6 +17,13 @@ source("2-clean.r")
 source("3-save.r")
 file.rename("alon.RData", "../../../data/alon.RData")
 
+# Borovecki (2005)
+setwd("borovecki-2005")
+source("1-download.r")
+source("2-clean.r")
+source("3-save.r")
+file.rename("borovecki.RData", "../../../data/borovecki.RData")
+
 # Chiaretti (2004)
 setwd("../chiaretti-2004")
 source("1-download.r")
