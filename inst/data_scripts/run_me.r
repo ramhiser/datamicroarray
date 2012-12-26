@@ -94,6 +94,13 @@ source("2-clean.r")
 source("3-save.r")
 file.rename("su.RData", "../../../data/su.RData")
 
+# Subramanian (2005)
+setwd("../subramanian-2005")
+source("1-download.r")
+source("2-clean.r")
+source("3-save.r")
+file.rename("subramanian.RData", "../../../data/subramanian.RData")
+
 # West (2001)
 setwd("../west-2001")
 source("1-download.r")
