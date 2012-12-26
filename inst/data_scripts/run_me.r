@@ -38,6 +38,13 @@ source("2-clean.r")
 source("3-save.r")
 file.rename("golub.RData", "../../../data/golub.RData")
 
+# Gordon (2002)
+setwd("../gordon-2002")
+source("1-download.r")
+source("2-clean.r")
+source("3-save.r")
+file.rename("gordon.RData", "../../../data/gordon.RData")
+
 # Gravier (2010)
 setwd("../gravier-2010")
 source("1-download.r")
