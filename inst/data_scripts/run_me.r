@@ -31,6 +31,13 @@ source("2-clean.r")
 source("3-save.r")
 file.rename("chiaretti.RData", "../../../data/chiaretti.RData")
 
+# Burczynski (2006)
+setwd("../burczynski-2006")
+source("1-download.r")
+source("2-clean.r")
+source("3-save.r")
+file.rename("burczynski.RData", "../../../data/burczynski.RData")
+
 # Christensen (2009)
 setwd("../christensen-2009")
 source("1-download.r")
