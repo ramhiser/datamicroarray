@@ -45,6 +45,13 @@ source("2-clean.r")
 source("3-save.r")
 file.rename("chin.RData", "../../../data/chin.RData")
 
+# Chowdary (2006)
+setwd("../chowdary-2006")
+source("1-download.r")
+source("2-clean.r")
+source("3-save.r")
+file.rename("chowdary.RData", "../../../data/chowdary.RData")
+
 # Christensen (2009)
 setwd("../christensen-2009")
 source("1-download.r")
