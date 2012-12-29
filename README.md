@@ -1,6 +1,6 @@
 # datamicroarray
 
-The R package `datamicroarray` provides a collection of scripts to download, process, and load small-sample, high-dimensional microarray data sets. For each data set, we include a small set of scripts that automatically download, clean, and save the data set
+The R package `datamicroarray` provides a collection of scripts to download, process, and load small-sample, high-dimensional microarray data sets. For each data set, we include a small set of scripts that automatically download, clean, and save the data set.
 
 ## Data Sets
 
@@ -50,6 +50,8 @@ install_github('datamicroarray', 'ramey')
 
 Note that you need to install the `devtools` package beforehand.
 
+## Usage
+
 Once you have installed and loaded the `datamicroarray` package, you can load a data set with the `data` command. For example, to load the well-known [Alon et al. (1999) Colon Cancer data set](https://github.com/ramey/datamicroarray/wiki/Alon-%281999%29), type the following at the R console:
 
 ```r
@@ -70,4 +72,31 @@ Here is a summary for the [Alon et al. (1999) Colon Cancer data set](https://git
 > table(alon$y)
  n  t 
 22 40 
+```
+
+You can see all of the data sets available along with a brief summary of each with the `describe_data` helper function. Here it is in action:
+
+```r
+> describe_data()
+        author year   n     p K              Disease
+1         alon 1999  62  2000 2         Colon Cancer
+2    borovecki 2005  31 22283 2 Huntington's Disease
+3   burczynski 2006 127 22283 3      Crohn's Disease
+4    chiaretti 2004 111 12625 2             Leukemia
+5         chin 2006 118 22215 2        Breast Cancer
+6     chowdary 2006 104 22283 2        Breast Cancer
+7  christensen 2009 217  1413 3                  N/A
+8        golub 1999  72  7129 3             Leukemia
+9       gordon 2002 181 12533 2          Lung Cancer
+10     gravier 2010 168  2905 2        Breast Cancer
+11        khan 2001  63  2308 4                SRBCT
+12     pomeroy 2002  60  7128 2            CNS Tumor
+13       shipp 2002  58  6817 2             Lymphoma
+14       singh 2002 102 12600 2      Prostate Cancer
+15      sorlie 2001  85   456 5        Breast Cancer
+16          su 2002 102  5565 4                  N/A
+17 subramanian 2005  50 10100 2                  N/A
+18        tian 2003 173 12625 2              Myeloma
+19        west 2001  49  7129 2        Breast Cancer
+20        yeoh 2002 248 12625 6             Leukemia
 ```
