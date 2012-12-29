@@ -70,5 +70,4 @@ Here is a summary for the [Alon et al. (1999) Colon Cancer data set](https://git
 > table(alon$y)
  n  t 
 22 40 
-> 
 ```
