@@ -1,6 +1,6 @@
 # datamicroarray
 
-The R package `datamicroarray` provides a collection of scripts to download, process, and load small-sample, high-dimensional microarray data sets. For each data set, we include a small set of scripts that automatically download, clean, and save the data set.
+The R package `datamicroarray` provides a collection of scripts to download, process, and load small-sample, high-dimensional microarray data sets to assess machine learning algorithms and models. For each data set, we include a small set of scripts that automatically download, clean, and save the data set.
 
 ## Data Sets
 
