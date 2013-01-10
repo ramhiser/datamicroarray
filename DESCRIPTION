@@ -1,7 +1,7 @@
 Package: datamicroarray
 Title: Collection of Data Sets for Classification
-Version: 0.2
-Date: 2012-12-18
+Version: 0.2.1
+Date: 2013-01-09
 Author: John A. Ramey <johnramey@gmail.com>
 Maintainer: John A. Ramey <johnramey@gmail.com>
 Description: A collection of scripts to download, process, and load
