@@ -18,6 +18,8 @@ Each data set is listed below by the first author on the original paper. The dat
   * [Burczynski (2006)](https://github.com/ramey/datamicroarray/wiki/Burczynski-%282006%29)
 * Colon Cancer
   * [Alon (1999)](https://github.com/ramey/datamicroarray/wiki/Alon-%281999%29)
+* Glioma
+  * [Sun (2006)](https://github.com/ramey/datamicroarray/wiki/Sun-%282006%29)
 * Huntington's Disease
   * [Borovecki (2005)](https://github.com/ramey/datamicroarray/wiki/Borovecki-%282005%29)
 * Leukemia
