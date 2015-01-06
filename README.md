@@ -49,7 +49,7 @@ You can install the latest package version by typing the following at the R cons
 
 ```r
 library(devtools)
-install_github('datamicroarray', 'ramey')
+install_github('ramhiser/datamicroarray')
 ```
 
 Note that you need to install the `devtools` package beforehand.
