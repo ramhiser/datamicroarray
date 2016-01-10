@@ -1,3 +1,11 @@
+datamicroarray 0.2.3
+-------------
+
+UPDATES
+
+* Revamped munge script for Chin et al. (2006) Data Set. The data matrix was stored as a character matrix.
+
+
 datamicroarray 0.2.1
 -------------
 
