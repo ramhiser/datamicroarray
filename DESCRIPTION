@@ -1,11 +1,11 @@
 Package: datamicroarray
 Title: Collection of Data Sets for Classification
-Version: 0.2.2
-Date: 2013-10-10
+Version: 0.2.3
+Date: 2016-01-10
 Author: John A. Ramey <johnramey@gmail.com>
 Maintainer: John A. Ramey <johnramey@gmail.com>
 Description: A collection of scripts to download, process, and load
     high-dimensional microarray data sets.
 License: MIT
-URL: https://github.com/ramey/datamicroarray,
+URL: https://github.com/ramhiser/datamicroarray,
     http://ramhiser.com
